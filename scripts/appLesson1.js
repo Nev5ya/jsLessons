@@ -3,19 +3,18 @@ const sub = document.getElementById("submit");
 const shadow = document.querySelector(".shadow-container");
 sub.onclick = function () {
     shadow.innerHTML = "";
-    let Tc = document.querySelector(".text-field").value;
-    if(Tc === "" || isNaN(Tc)){
-        return shadow.innerHTML = `<p>Введите число</p>`;
+    let Tc = +document.querySelector(".text-field").value;
+    if(isNaN(Tc)){
+        shadow.innerHTML = `<p>Введите число</p>`;
+        return;
     }
-    let Tf;
-    Tf = (9 / 5) * Tc + 32;
+    let Tf = (9 / 5) * Tc + 32;
     shadow.insertAdjacentHTML('afterbegin', `<p>Temperature in Celsius: ${Tf}</p>`);
 };
 
 //Задание 2;
-let admin;
 let name = "Василий";
-admin = name;
+let admin = name;
 console.log(admin);
 
 //Задание 3;

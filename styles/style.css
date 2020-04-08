@@ -40,12 +40,17 @@ a {
 }
 
 p {
-  color: #ff6c13;
   font-size: 20px;
 }
 
 .task-style {
   font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.task-1__container {
+  border: 1px solid #000;
+  padding: 5px 10px;
   margin-bottom: 20px;
 }
 
